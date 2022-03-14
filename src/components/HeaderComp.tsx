@@ -6,7 +6,7 @@ const HeaderComp = () => {
   return (
       <Header>
           <nav>
-              <p>Logo</p>
+              <p>Dinnygreen Logo</p>
               <ul>
                   <li>
                       <Link to="/">Home</Link>
