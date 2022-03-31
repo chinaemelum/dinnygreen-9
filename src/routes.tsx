@@ -1,21 +1,27 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import styled from 'styled-components';
 import FooterComp from './components/FooterComp';
-import HeaderComp from './components/HeaderComp';
+// import HeaderComp from './components/HeaderComp';
 import HomePage from './pages';
 import AboutPage from './pages/about';
+import BlogPage from "./pages/Blog";
 import ContactPage from './pages/contact';
+import InstuctorPage from "./pages/Instructors";
+import ServicePage from "./pages/Services";
 
 const RouterComp = () => {
     return (
         <Wrapper>
             <Router>
-            <HeaderComp/>
+            {/* <HeaderComp/> */}
                 <div className="main-app">
                      <Routes>
                 <Route path='/' element={<HomePage/>} />
-                <Route path='/about' element={<AboutPage/>} />
-                <Route path='/contact' element={<ContactPage/>} />
+                <Route path='/' element={<AboutPage/>} />
+                <Route path='/' element={<ServicePage/>} />
+                <Route path='/' element={<InstuctorPage/>} />
+                <Route path='/' element={<BlogPage/>} />
+                <Route path='/' element={<ContactPage/>} />
             </Routes>
            </div>
             <FooterComp/>
